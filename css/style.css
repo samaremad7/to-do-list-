@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+    height: 680px;
+}
+.container {
+    padding: 20px;
+    width: 400px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 70px;
+}
+.to-do input{
+    flex-grow: 1;
+    height: 40px; 
+    margin-right: 10px;
+    padding-left: 15px;
+    font-size: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.to-do button{
+    padding: 10px 20px; 
+    margin-left: 25px;
+    background-color: #4162f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; 
+}
+.to-do button:hover{
+    background-color: #314f9a;
+}
+.to-dos {
+    width: 100%;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.item p {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 18px;
+    color: #333;
+}
+.item .delete-btn {
+    color: #af0000;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.item .delete-btn:hover {
+    color: #ff0000;
+}
+
+.complete-btn, .edit-btn, .delete-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.complete-btn:hover {
+    color: #28a745;
+}
+
+.edit-btn:hover {
+    color: #ffc107; 
+}
+
+.delete-btn:hover {
+    color: #ff0000; 
+}
